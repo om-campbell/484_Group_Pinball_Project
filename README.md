@@ -1,8 +1,8 @@
 # Welcome to the 484 Pinball Project Wiki
 ## Introduction
 ![image](https://github.com/om-campbell/484_Group_Pinball_Project/assets/95391563/20d9a2f8-a770-4ea8-940a-2e6816f70a2d)
+
 The goal of this project was to electrify a mechanical cardboard pinball machine. Four aspects of the machine were changed: The playfield, the score keeping display, the plunger, and the flippers. The playfield, which origionally consisted of two holes for the player to target, was updated to two goal posts that reward the player with points that scale based on the number of balls in play. The display was updated to a color LCD and activley displays game time, balls in play, and score. The plunger **TO DO**. The flippers **TO DO**.
-The goal of
 ## Play Field
 ### Introduction
 Obstacles are the cornerstone of any pinball machine. They are the sensors that govern score and by extensions the actions of the player. The goal of this prototype was to create a pinball machine that challanges the player and rewards skilled play. One was to make pinball more challanging is to have multiple balls in play. My pinball machine applies a score multiplier based on the number of balls in play. This is the central mechanic of the game.
