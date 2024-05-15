@@ -34,4 +34,6 @@ The sensors were wired as shown in the wiring diagram above.
 (Demo Link)[https://youtube.com/shorts/967ty7Ltx_s?feature=share]
 ## Display
 ## Plunger
+### Introduction 
+The primary goal for the plunger was to electrify it, transforming it from a mechanical design that used a rubber band to launch the ball into play. By incorporating a solenoid and a push button, the user would be able to launch the ball into the field of play with a simple press. One of the challenges faced during this conversion was ensuring the solenoid had enough power to effectively launch the ball.
 ## Flippers
