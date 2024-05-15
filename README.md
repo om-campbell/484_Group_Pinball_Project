@@ -77,6 +77,10 @@ Once the final design of the circuit was complete, I took out the push button th
 </div>
 
 ### Plunger Demo Video
-https://youtube.com/shorts/v7n4OeOehnQ?feature=share
+<div align="center">
+  <a href="https://youtube.com/shorts/v7n4OeOehnQ?feature=share">
+    <img src="https://img.youtube.com/vi/v7n4OeOehnQ/0.jpg" alt="Plunger Demo Video" width="400">
+  </a>
+</div>
 
 ## Flippers
