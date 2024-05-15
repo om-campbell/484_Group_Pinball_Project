@@ -35,5 +35,16 @@ The sensors were wired as shown in the wiring diagram above.
 ## Display
 ## Plunger
 ### Introduction 
-The primary goal for the plunger was to electrify it, transforming it from a mechanical design that used a rubber band to launch the ball into play. By incorporating a solenoid and a push button, the user would be able to launch the ball into the field of play with a simple press. One of the challenges faced during this conversion was ensuring the solenoid had enough power to effectively launch the ball.
+The primary goal for the plunger was to electrify it, transforming it from a mechanical design that used a rubber band to launch the ball into play. By incorporating a solenoid and a push button, the user would be able to launch the ball into the field of play with a simple press. One of the challenges faced during electriying the plunger was ensuring the solenoid had enough power to effectively launch the ball.
+
+Solenoid
+After ordering and testing a 5V solenoid I decided that it would not have enough power to effectivily launch the ball into the playing field. So I decided to order a 12V solenoid and a 12V/2A power supply that could be plugged into an outlet. I found a helpful [tutorial](https://www.youtube.com/watch?v=nwVRMU9grSI&t=569s) on YouTube that showed how to control a 12V solenoid with an Arduino. After watching the tutorial, I found that it would be better to not use an Arduino for this and just use a push button, which would trigger the solenoid. A diode was used in the circuit to protect the other components from voltage spikes caused by the solenoid. When the current flowing through the solenoid, which is an inductive load, is suddenly interrupted, the collapsing magnetic field generates a high-voltage spike in the opposite direction of the original current flow. This phenomenon is known as back electromotive force (back EMF). The didode in the circuit was placed in reverse, so if there is normal current flowing through the circuit, it does nothing, but if current starts flowing backwards, then the diode stops that current by essentially short-circuiting the solenoid.
+<div align="center">
+  <img src="https://github.com/Gwill10/ECE484_Final_Individual_Project/assets/94477072/a8b15c34-2185-4da7-bf13-62a1379dbeaa" alt="12V Solenoid wiring diagram">
+  <p>12V Solenoid wiring diagram</p>
+</div>
+
+
+
+
 ## Flippers
