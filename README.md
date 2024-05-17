@@ -31,8 +31,36 @@ The sensors were wired as shown in the wiring diagram above.
 #### Playing Field
 ![image](https://github.com/IanPascoe/Pinball-Obstacles/assets/95391563/951f8da3-765e-4950-9736-5b2fcc9af604)
 ### Demo Video
-(Demo Link)[https://youtube.com/shorts/967ty7Ltx_s?feature=share]
+https://youtube.com/shorts/967ty7Ltx_s?feature=share
 ## Display
+The display is positioned at the head of the pinball machine and provides information to the player via an LCD. The display is controlled by an arduino which receives information from the various sensors to determine the state of the game including; how many balls are in the field, when a point has been scored, if there is an active multiplier, etc. From the display the player will be able to see what multiplier if any is active, the score, and graphics may possibly be added later on to match our theme. 
+
+![Back Of Pinball Display](https://github.com/om-campbell/484_Individual_Pinball_Project/assets/95777461/1805d10f-cbc5-4238-ac23-7842e7e45cd4)
+![Under the board](https://github.com/om-campbell/484_Individual_Pinball_Project/assets/95777461/fceb112d-1c67-4ce6-9710-4e60679b43c0)
+
+
+LCD INFO
+Interface: SPI
+LCD type: IPS
+Driver: ST7789V
+Resolution: 240(V) x 320 (H) RGB
+Display size: 30.60（H）x 40.80（V）mm
+Pixel size: 0.0975（H）x 0.0975（V）mm
+Dimension: 58 x 35 (mm)
+
+We used an arduino uno microcontroller clone to process the information from the game and display it to the screen. 6 Digital pins are used for the LCD and 4 are used for the various tripwire sensors receivers. 
+
+### Schematic
+The following image shows how the LCD is wired to the arduino
+![image](https://github.com/om-campbell/484_Individual_Pinball_Project/assets/95777461/cbff060f-14b7-400d-baf6-167614743469)
+
+### Demo
+https://youtube.com/shorts/967ty7Ltx_s?feature=share
+
+### References
+https://www.waveshare.com/wiki/2inch_LCD_Module?Amazon
+
+
 ## Plunger
 ### Introduction 
 The primary goal for the plunger was to electrify it, transforming it from a mechanical design that used a rubber band to launch the ball into play. By incorporating a solenoid and a push button, the user would be able to launch the ball into the field of play with a simple press. One of the challenges faced during electriying the plunger was ensuring the solenoid had enough power to effectively launch the ball.
@@ -84,3 +112,16 @@ Once the final design of the circuit was complete, I took out the push button th
 </div>
 
 ## Flippers
+The flippers were made up of a button, 12V solenoid and a 3D flipper. The solenoid is taped down to the board and screwed into to the flipper> This worked by have the button complete the circuit which then activated the solenoid. The solenoid would then pull the flipper down allowing it to turn on it's pivot point.     
+    <img src="https://private-user-images.githubusercontent.com/94477032/331374670-c824c67c-2401-4a2d-8be2-2af26f023583.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTU4OTE3MTIsIm5iZiI6MTcxNTg5MTQxMiwicGF0aCI6Ii85NDQ3NzAzMi8zMzEzNzQ2NzAtYzgyNGM2N2MtMjQwMS00YTJkLThiZTItMmFmMjZmMDIzNTgzLmpwZWc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUxNlQyMDMwMTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMjY0OTAyNDgyMjI2ZGUzOGMzYjNkYzgyYTVkYTI2ZDlkMzg1ZjU0OWRiNzA3YjgyYjUyMWVjM2E3OWUwMzBkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.8_yXVdhXTI3dJMLeKBBlKCievaelrHiB8_-FWpmgsNk" alt="Parts Picture" width="400">
+
+<img src="https://private-user-images.githubusercontent.com/94477032/331377753-99cd3acf-b423-4c6c-8008-2bd937f04d20.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTU4OTIzNTcsIm5iZiI6MTcxNTg5MjA1NywicGF0aCI6Ii85NDQ3NzAzMi8zMzEzNzc3NTMtOTljZDNhY2YtYjQyMy00YzZjLTgwMDgtMmJkOTM3ZjA0ZDIwLmpwZWc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUxNlQyMDQwNTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNzJjYjk5ODNmZTUxZDE0ZGQ5OTdiNmE3NWVjYWVlMjlmM2Q0OTVhNzRiNDAyM2FlMzI5Njk1MWI5YTExZjFmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.lvFSXxhKz8rsTDuTFuQHLIfgeEyYFaT91JVVpBzpF1M" alt="flipper connection Picture" width="400">
+
+Originally the flippers shared the circuit as the plunger. With this design we had power issues with getting the plunger to pull on the flipper. We first tried lighter 3D printed versions but that didn't work. We then changed to circuit to the one pictured below and had better results. 
+
+![pinballc](https://github.com/om-campbell/484_Group_Pinball_Project/assets/94477032/107720ed-ad84-4223-b026-0078c7fc659f)
+
+
+## Flipper Demo Video
+
+https://youtube.com/shorts/DPpAwfs7jjY?feature=share
